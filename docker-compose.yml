@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    # Auth: .env has SHOPIFY_* and PARTNER_API_KEYS. Mount token if you use OAuth callback.
+    volumes:
+      - ./.shopify_token:/app/.shopify_token
+    restart: unless-stopped

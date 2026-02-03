@@ -1,0 +1,34 @@
+# Git and IDE
+.git
+.gitignore
+.vscode
+.idea
+
+# Env and secrets (provide at runtime)
+.env
+.env.*
+!.env.example
+.shopify_token
+
+# Build artifacts and binaries
+*.exe
+*.dll
+*.so
+*.dylib
+fetchProductB2B
+productb2b
+
+# Data and exports (not needed in image)
+*.xlsx
+*.pdf
+*.docx
+
+# Docs and tests (optional to exclude)
+PARTNER_API_DOCUMENTATION*
+TESTING_GUIDE*
+*.ps1
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore

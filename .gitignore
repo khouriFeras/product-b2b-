@@ -1,0 +1,24 @@
+# Env and secrets — never commit
+.env
+.env.*
+!.env.example
+.shopify_token
+
+# Build and binaries
+*.exe
+*.dll
+*.so
+*.dylib
+fetchProductB2B
+productb2b
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Optional: uncomment to ignore exports/docs
+# *.xlsx
+# *.pdf
+# *.docx
